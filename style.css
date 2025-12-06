@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  height: 100vh;
+  width: 100wv;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.red-screen {
+  background-color: red;
+}
+
+.green-screen {
+  background-color: green;
+}
+
+.textshow {
+  position: relative;
+  bottom: 95px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px; /* fixed size works fine for a tic-tac-toe grid */
+  height: 298px;
+}
+
+.container div {
+  width: 33.33%;
+  height: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.container .box:nth-child(-n + 3) {
+  border-top: none;
+}
+
+.container .box:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.container .box:nth-child(3n) {
+  border-right: none;
+}
+
+.container .box:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+/* .one {
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+}
+
+.two {
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+}
+
+.three {
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.four {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+}
+
+.six {
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+}
+
+.seven {
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.eight {
+    border: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    margin-top: -2px;
+} */
